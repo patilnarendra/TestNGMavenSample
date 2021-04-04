@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5">
+	<listeners>
+		<listener class-name="TestNGStudy.TestNGDataProvider.ListenerImpl"></listener>
+	</listeners>
+	<parameter name="name" value="NSP"></parameter>
+	<test thread-count="5" name="Sample1">
+	<!-- 	<groups>
+			<run>
+				<include name="test3"></include>
+			</run>
+		</groups> -->
+		<classes>
+			<class name="TestNGStudy.TestNGDataProvider.Demo2" />
+		</classes>
+	</test> <!-- Sample1 -->
+	<test name="Sample2">
+		<classes>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
